@@ -1,6 +1,7 @@
 package tombola;
 
 import java.util.Random;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -24,272 +25,22 @@ public class TombolaClient extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField15 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        Cell1 = new javax.swing.JTextField();
-        Cell2 = new javax.swing.JTextField();
-        Cell3 = new javax.swing.JTextField();
-        Cell4 = new javax.swing.JTextField();
-        Cell5 = new javax.swing.JTextField();
-        Cell8 = new javax.swing.JTextField();
-        Cell6 = new javax.swing.JTextField();
-        Cell9 = new javax.swing.JTextField();
-        Cell7 = new javax.swing.JTextField();
-        Cell15 = new javax.swing.JTextField();
-        Cell10 = new javax.swing.JTextField();
-        Cell11 = new javax.swing.JTextField();
-        Cell12 = new javax.swing.JTextField();
-        Cell18 = new javax.swing.JTextField();
-        Cell13 = new javax.swing.JTextField();
-        Cell16 = new javax.swing.JTextField();
-        Cell14 = new javax.swing.JTextField();
-        Cell17 = new javax.swing.JTextField();
-        Cell24 = new javax.swing.JTextField();
-        Cell19 = new javax.swing.JTextField();
-        Cell20 = new javax.swing.JTextField();
-        Cell21 = new javax.swing.JTextField();
-        Cell27 = new javax.swing.JTextField();
-        Cell22 = new javax.swing.JTextField();
-        Cell25 = new javax.swing.JTextField();
-        Cell23 = new javax.swing.JTextField();
-        Cell26 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-
-        jTextField15.setText("jTextField1");
-        jTextField15.setMinimumSize(new java.awt.Dimension(60, 40));
-        jTextField15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField15ActionPerformed(evt);
-            }
-        });
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tableModel = new DefaultTableModel();
+        DefaultTableModel tableModel = new DefaultTableModel(0, 0);
+        jTable1 = new javax.swing.JTable();
+        btnGenera = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(600, 400));
-        setSize(new java.awt.Dimension(600, 400));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel1.setText("Bingo");
+        jTable1.setModel(tableModel);
+        jTable1.setTableHeader(null);
+        jScrollPane2.setViewportView(jTable1);
 
-        Cell1.setText("jTextField1");
-        Cell1.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell1.addActionListener(new java.awt.event.ActionListener() {
+        btnGenera.setText("nuova scheda");
+        btnGenera.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell1ActionPerformed(evt);
-            }
-        });
-
-        Cell2.setText("jTextField1");
-        Cell2.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell2ActionPerformed(evt);
-            }
-        });
-
-        Cell3.setText("jTextField1");
-        Cell3.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell3ActionPerformed(evt);
-            }
-        });
-
-        Cell4.setText("jTextField1");
-        Cell4.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell4ActionPerformed(evt);
-            }
-        });
-
-        Cell5.setText("jTextField1");
-        Cell5.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell5ActionPerformed(evt);
-            }
-        });
-
-        Cell8.setText("jTextField1");
-        Cell8.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell8ActionPerformed(evt);
-            }
-        });
-
-        Cell6.setText("jTextField1");
-        Cell6.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell6ActionPerformed(evt);
-            }
-        });
-
-        Cell9.setText("jTextField1");
-        Cell9.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell9ActionPerformed(evt);
-            }
-        });
-
-        Cell7.setText("jTextField1");
-        Cell7.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell7ActionPerformed(evt);
-            }
-        });
-
-        Cell15.setText("jTextField1");
-        Cell15.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell15ActionPerformed(evt);
-            }
-        });
-
-        Cell10.setText("jTextField1");
-        Cell10.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell10ActionPerformed(evt);
-            }
-        });
-
-        Cell11.setText("jTextField1");
-        Cell11.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell11ActionPerformed(evt);
-            }
-        });
-
-        Cell12.setText("jTextField1");
-        Cell12.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell12ActionPerformed(evt);
-            }
-        });
-
-        Cell18.setText("jTextField1");
-        Cell18.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell18ActionPerformed(evt);
-            }
-        });
-
-        Cell13.setText("jTextField1");
-        Cell13.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell13ActionPerformed(evt);
-            }
-        });
-
-        Cell16.setText("jTextField1");
-        Cell16.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell16ActionPerformed(evt);
-            }
-        });
-
-        Cell14.setText("jTextField1");
-        Cell14.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell14ActionPerformed(evt);
-            }
-        });
-
-        Cell17.setText("jTextField1");
-        Cell17.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell17ActionPerformed(evt);
-            }
-        });
-
-        Cell24.setText("jTextField1");
-        Cell24.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell24ActionPerformed(evt);
-            }
-        });
-
-        Cell19.setText("jTextField1");
-        Cell19.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell19ActionPerformed(evt);
-            }
-        });
-
-        Cell20.setText("jTextField1");
-        Cell20.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell20ActionPerformed(evt);
-            }
-        });
-
-        Cell21.setText("jTextField1");
-        Cell21.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell21ActionPerformed(evt);
-            }
-        });
-
-        Cell27.setText("jTextField1");
-        Cell27.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell27ActionPerformed(evt);
-            }
-        });
-
-        Cell22.setText("jTextField1");
-        Cell22.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell22ActionPerformed(evt);
-            }
-        });
-
-        Cell25.setText("jTextField1");
-        Cell25.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell25ActionPerformed(evt);
-            }
-        });
-
-        Cell23.setText("jTextField1");
-        Cell23.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell23ActionPerformed(evt);
-            }
-        });
-
-        Cell26.setText("jTextField1");
-        Cell26.setMinimumSize(new java.awt.Dimension(60, 40));
-        Cell26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cell26ActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("Nuova scheda");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnGeneraActionPerformed(evt);
             }
         });
 
@@ -298,233 +49,28 @@ public class TombolaClient extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(60, 60, 60)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(Cell19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Cell20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Cell21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Cell22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Cell23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Cell24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Cell25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Cell26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Cell27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(Cell10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(Cell1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel1)
-                                        .addComponent(Cell5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Cell9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addComponent(jButton1)))
-                .addGap(0, 11, Short.MAX_VALUE))
+                    .addComponent(btnGenera)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 587, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel1)
-                .addGap(41, 41, 41)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Cell1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Cell10, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Cell19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell20, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell23, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell24, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell26, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Cell27, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(28, 28, 28))
+                .addGap(166, 166, 166)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+                .addComponent(btnGenera)
+                .addGap(78, 78, 78))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Cell1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell1ActionPerformed
-
-    private void Cell2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell2ActionPerformed
-
-    private void Cell3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell3ActionPerformed
-
-    private void Cell4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell4ActionPerformed
-
-    private void Cell5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell5ActionPerformed
-
-    private void Cell8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell8ActionPerformed
-
-    private void Cell6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell6ActionPerformed
-
-    private void Cell9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell9ActionPerformed
-
-    private void Cell7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell7ActionPerformed
-
-    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField15ActionPerformed
-
-    private void Cell15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell15ActionPerformed
-
-    private void Cell10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell10ActionPerformed
-
-    private void Cell11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell11ActionPerformed
-
-    private void Cell12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell12ActionPerformed
-
-    private void Cell18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell18ActionPerformed
-
-    private void Cell13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell13ActionPerformed
-
-    private void Cell16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell16ActionPerformed
-
-    private void Cell14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell14ActionPerformed
-
-    private void Cell17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell17ActionPerformed
-
-    private void Cell24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell24ActionPerformed
-
-    private void Cell19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell19ActionPerformed
-
-    private void Cell20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell20ActionPerformed
-
-    private void Cell21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell21ActionPerformed
-
-    private void Cell27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell27ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell27ActionPerformed
-
-    private void Cell22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell22ActionPerformed
-
-    private void Cell25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell25ActionPerformed
-
-    private void Cell23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell23ActionPerformed
-
-    private void Cell26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cell26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Cell26ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnGeneraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGeneraActionPerformed
         generateNewTable();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnGeneraActionPerformed
 
     /**
      * @param args the command line arguments
@@ -562,41 +108,89 @@ public class TombolaClient extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField Cell1;
-    private javax.swing.JTextField Cell10;
-    private javax.swing.JTextField Cell11;
-    private javax.swing.JTextField Cell12;
-    private javax.swing.JTextField Cell13;
-    private javax.swing.JTextField Cell14;
-    private javax.swing.JTextField Cell15;
-    private javax.swing.JTextField Cell16;
-    private javax.swing.JTextField Cell17;
-    private javax.swing.JTextField Cell18;
-    private javax.swing.JTextField Cell19;
-    private javax.swing.JTextField Cell2;
-    private javax.swing.JTextField Cell20;
-    private javax.swing.JTextField Cell21;
-    private javax.swing.JTextField Cell22;
-    private javax.swing.JTextField Cell23;
-    private javax.swing.JTextField Cell24;
-    private javax.swing.JTextField Cell25;
-    private javax.swing.JTextField Cell26;
-    private javax.swing.JTextField Cell27;
-    private javax.swing.JTextField Cell3;
-    private javax.swing.JTextField Cell4;
-    private javax.swing.JTextField Cell5;
-    private javax.swing.JTextField Cell6;
-    private javax.swing.JTextField Cell7;
-    private javax.swing.JTextField Cell8;
-    private javax.swing.JTextField Cell9;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jTextField15;
+    private javax.swing.JButton btnGenera;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 
+    DefaultTableModel tableModel;
+
     private void generateNewTable() {
-        Random rand= new Random();
-        for(int i=0;)
-        rand.nextInt(90);
+        int[] vuoti = new int[4];
+        Random random = new Random();
+        tableModel = new DefaultTableModel();
+        tableModel.addColumn("a");
+        tableModel.addColumn("b");
+        tableModel.addColumn("c");
+        tableModel.addColumn("d");
+        tableModel.addColumn("e");
+        tableModel.addColumn("f");
+        tableModel.addColumn("g");
+        tableModel.addColumn("h");
+        tableModel.addColumn("i");
+        Object[] row1 = new Object[9];
+        Object[] row2 = new Object[9];
+        Object[] row3 = new Object[9];
+
+        for (int i = 0; i < 9; i++) {
+            row1[i] = random.nextInt(i, (i + 1) * 10);
+            row2[i] = random.nextInt(i, (i + 1) * 10);
+            row3[i] = random.nextInt(i, (i + 1) * 10);
+            if (i > 0) {
+                row1[i] = random.nextInt(i * 10, (i + 1) * 10);
+                row2[i] = random.nextInt(i * 10, (i + 1) * 10);
+                row3[i] = random.nextInt(i * 10, (i + 1) * 10);
+            }
+        }
+        
+        for (int i = 0; i < 4; i++) {
+            vuoti[i] = random.nextInt(0, 9);
+            for (int j = 0; j < i; j++) {
+                while (vuoti[i] == vuoti[j]) {
+                    vuoti[i] = random.nextInt(0, 9);
+                }
+            }
+        }
+        
+        for (int i = 0; i < 4; i++) {
+            row1[vuoti[i]]=null;
+        }
+
+        tableModel.addRow(row1);
+        tableModel.addRow(row2);
+        tableModel.addRow(row3);
+
+        jTable1.setModel(tableModel);
+//        int[] vuoti = new int[4];
+//        tableModel = new DefaultTableModel();
+//        tableModel.addColumn("a");
+//        tableModel.addColumn("b");
+//        tableModel.addColumn("c");
+//        tableModel.addColumn("d");
+//        tableModel.addColumn("e");
+//        tableModel.addColumn("f");
+//        tableModel.addColumn("g");
+//        tableModel.addColumn("h");
+//        tableModel.addColumn("i");
+//        Random random = new Random();
+//        Object[] row = new Object[9];
+//        for (int j = 0; j < 3; j++) {
+//            for (int i = 0; i < 9; i++) {
+//                row[i] = random.nextInt(0, 90);
+//            }
+//            vuoti[0] = random.nextInt(0, 9);
+//            vuoti[1] = random.nextInt(0, 9);
+//            vuoti[2] = random.nextInt(0, 9);
+//            vuoti[3]=random.nextInt(0,9);
+//            row[vuoti[0]]=null;
+//            row[vuoti[1]]=null;
+//            row[vuoti[2]]=null;
+//            row[vuoti[3]]=null;
+//
+//            tableModel.addRow(row);
+//        }
+//
+//        jTable1.setModel(tableModel);
     }
+
 }
